@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Website</title>
+<style>
+body {
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  position: fixed; /* Make it fixed */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Full width */
+  transition: background-color 0.3s ease-in-out; /* Add smooth transition */
+}
+
+.navbar.scrolled {
+  background-color: #3f51b5; /* Indigo blue on scroll */
+}
+
+.navbar a {
+  float: right; /* Right align */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 60px; /* Adjust for navbar height */
+  width: 1000%; /* 60% width */
+  margin: 0 auto; /* Center the content */
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.hero-section {
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-buttons {
+  text-align: center;
+}
+
+.hero-buttons button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hero-buttons button.services {
+  background-color: #3f51b5; /* Indigo blue */
+  color: white;
+}
+
+.hero-buttons button.contact {
+  background-color: white;
+  color: #3f51b5;
+}
+
+.welcome-section {
+  text-align: center; /* Center text horizontally */
+  padding: 50px 0; /* Add top and bottom padding for spacing */
+  background-color: #f0f0f0; /* Optional: Add a subtle background color */
+}
+
+.welcome-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px; /* Limit width for better readability */
+  margin: 0 auto; /* Center paragraph */
+}
+
+.services-section {
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+.container {
+    max-width: 960px; /* Adjust max-width as needed */
+    margin: 0 auto;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 300px; /* Adjust width as needed */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 30px 0; /* Adjust padding as needed */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-top h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: calc(33.33% - 20px); /* Adjust for spacing */
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: right;
+}
+
+.copyright img {
+    width: 50px; /* Adjust logo size as needed */
+    margin-right: 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #007bff; /* Blue color (adjust as needed) */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#contact">Contact</a>
+  <a href="#services">Services</a> 
+  <a href="#about">About</a> 
+   
+  
+</div>
+
+<div class="hero-section">
+  <div class="hero-buttons">
+    <button class="services">Services</button>
+    <button class="contact">Contact</button>
+  </div>
+</div>
+
+<section id="about" class="welcome-section">
+  <h1>Welcome to Mangayalam</h1>
+  <p>Connecting hearts through meaningful matches.</p>
+  <p>At Mangayalam, we understand the significance of finding the right partner for a lifelong journey. Our dedicated team is committed to facilitating genuine connections by offering a personalized approach to matrimonial matchmaking. We take the time to understand your preferences, values, and aspirations, ensuring that each match is thoughtfully curated to align with your vision of a perfect relationship.</p>
+  <p>Whether you are looking for a traditional match or a modern partnership, we are here to support you every step of the way. Experience the warmth of personalized service and the joy of meaningful connections with Mangayalam.</p>
+</section>
+
+<section id="services" class="services-section">
+    <div class="container">
+        <h2>Matrimonial services we offer</h2>
+        <p>From initial consultation to successful matchmaking, we work closely with you to create a tailored experience that reflects your unique journey. Experience the excellence of personalized matchmaking where every detail matters.</p>
+
+        <div class="service-cards">
+            <div class="card">
+                <h3>Profile Creation</h3>
+                <p>Our Profile Creation service is designed to help you present your best self to potential matches. We guide you in crafting a compelling profile that highlights your personality, values, and aspirations, ensuring you stand out in the matrimonial landscape.</p>
+            </div>
+
+            <div class="card">
+                <h3>Matchmaking Consultation</h3>
+                <p>Enhance your search with our Matchmaking Consultation service, where we listen to your preferences and provide you with curated matches that resonate with your expectations. Our experienced matchmakers are dedicated to finding the right fit for you.</p>
+            </div>
+
+            <div class="card">
+                <h3>Compatibility Assessment</h3>
+                <p>Elevate your experience with our Compatibility Assessment service. Our expert team will help you understand your compatibility with potential partners through insightful analysis, ensuring a harmonious match that aligns with your values and lifestyle.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div id="contact" class="container">
+        <div class="footer-top">
+            <h2>Our contacts</h2>
+            <div class="contact-info">
+                <div class="column">
+                    <h3>Contact</h3>
+                    <p>info@youraddress.com</p>
+                    <p>646-675-5974</p>
+                </div>
+                <div class="column">
+                    <h3>Location</h3>
+                    <p>3961 Small Street, New York</p>
+                    <p>United States</p>
+                </div>
+                <div class="column">
+                    <h3>Open hours</h3>
+                    <p>Monday to Friday</p>
+                    <p>9:00 am - 7:30 pm</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="copyright">
+                <img src="path/to/your/logo.svg" alt="Logo">
+                <p>&copy; All Rights Reserved. Mangayalam</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("navbar").classList.add("scrolled");
+    } else {
+      document.getElementById("navbar").classList.remove("scrolled");
+    }
+  }
+// Get all navbar links
+const navLinks = document.querySelectorAll('.navbar a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default link behavior
+
+    const targetId = link.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth' // Enable smooth scrolling
+      });
+    }
+  });
+});
+
+
+const servicesLink = document.querySelector('.services');
+
+servicesLink.addEventListener('click', (e) => {
+  e.preventDefault(); 
+
+  const targetId = servicesLink.getAttribute('href');
+  const targetElement = document.querySelector(targetId);
+
+  if (targetElement) {
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth' 
+    });
+  }
+});
+
+</script>
+
+</body>
+</html>
